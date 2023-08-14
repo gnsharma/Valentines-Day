@@ -85,7 +85,7 @@ span.two:after {
 }
 
 span.three:after {
-  content: "post-valentine date?";
+  content: "trekking companion?";
 }
 
 @media screen and (min-width: 880px) {
