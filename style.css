@@ -84,8 +84,13 @@ span.two:after {
   content: "bee my";
 }
 
+span.three {
+  white-space: normal;
+}
+
 span.three:after {
   content: "trekking companion?";
+  white-space: normal;
 }
 
 @media screen and (min-width: 880px) {
