@@ -91,6 +91,7 @@ span.three {
 span.three:after {
   content: "trekking companion?";
   white-space: normal;
+  letter-spacing: 14px;
 }
 
 @media screen and (min-width: 880px) {
