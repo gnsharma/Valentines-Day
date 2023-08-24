@@ -1,8 +1,18 @@
 (() => {
   const urlParams = new URLSearchParams(window.location.search);
-  const valentine = urlParams.get("valentine");
-  if (valentine) {
-    document.getElementById("valentine").innerText = valentine;
+  console.log({ urlParams });
+  const name = urlParams.get("name");
+  if (name) {
+    document.getElementById("name").innerText = name;
+  }
+  const secondMessage = urlParams.get("secondmessage");
+  if (secondMessage) {
+    document.getElementById("secondMessage").innerText = secondMessage;
+  }
+  const heading = urlParams.get("heading");
+  if (heading) {
+    document.getElementById("heading").innerText = heading;
+    document.title = heading.toUpperCase();
   }
   const message = urlParams.get("message");
   if (message) {
