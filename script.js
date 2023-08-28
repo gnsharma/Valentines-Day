@@ -1,20 +1,24 @@
 (() => {
   const urlParams = new URLSearchParams(window.location.search);
-  console.log({ urlParams });
-  const name = urlParams.get("name");
+
+  const name = urlParams.get("name") || "Anika Jain";
   if (name) {
     document.getElementById("name").innerText = name;
   }
-  const secondMessage = urlParams.get("secondmessage");
+
+  const secondMessage =
+    urlParams.get("secondmessage") || "You are my queen bee!!!";
   if (secondMessage) {
     document.getElementById("secondMessage").innerText = secondMessage;
   }
-  const heading = urlParams.get("heading");
+
+  const heading = urlParams.get("heading") || "Happy Valentine's Day!";
   if (heading) {
     document.getElementById("heading").innerText = heading;
     document.title = heading.toUpperCase();
   }
-  const message = urlParams.get("message");
+
+  const message = urlParams.get("message") || "Will you Bee my valentine?";
   if (message) {
     document.getElementById("message").innerText = message;
   }
